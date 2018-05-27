@@ -5,3 +5,7 @@ then
 else
   echo " anku us ye"
 fi
+while read type 
+do
+echo "$type"
+done  
