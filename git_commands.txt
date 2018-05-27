@@ -1,0 +1,51 @@
+git init -- to initialize a git repository in your local branch
+git status ---  It will give status of branch it is up todate or not
+=========================================
+Adding a file to project
+git status  ( to check the status of local verison)
+git add File-name ( to add anyfile name)
+git status   ( to check after adding to local)
+git commit -m "Message)
+git push
+============================================
+Branch
+---> Master is default branch
+git branch ( list all the branch)
+git branch v1_global_project ( This is to create branch)
+git checkout  v1_global_project ( We go into new branch)
+branch merg will happen only from master branch
+git merge new-branch-name
+to push branch to origni git hib
+ git push --set-upstream origin v2b
+
+
+git checkout -b dummy ( tis is to create new branch and checkout togerter)
+git branch -d dummy ( do delete branch dummy)
+================================== 
+
+
+git difftool HEAD  " this will give diffrence of local and remote version"
+git remote add "URL of remote GIT" - to add local repository to remote github
+git pull "URL of GIT Repo" - to pull the files from the remote directory
+git clone "URL of the GIT" to clone a repository which is already existing in the remote.
+git branch branchName - to create a new branch
+git checkout -b branchName - to create a new branch and switch to it
+git checkout branchName  - to switch between the branches.
+git branch -d branchName - to remove the branchName
+git push -u origin branchName - to push the branch to remote
+git merge branchName - to merge the branch to the master branch. make sure to checkout before merging.
+git push origin branchName - to push changes to the remote branch.
+git add --all - to add all modified files to the index
+git status - to check modified files.
+git commit -a -m "message" - to commit changes in your local repository
+git checkout -- <full path of the file to rollback> - to rollback changes of any file before adding to index
+git config --global pull.rebase true -- (Configure Git to always rebase when pulling)
+git config --global branch.master.mergeoptions "--no-ff" -- (Configure Git to always create a commit merge instead of fast-forwarding when merging into master branch)
+git config --global pull.ff yes -- (In order to avoid merge commits when pulling most updated master)
+git pull --rebase origin master -- (to work with short lived branches, and to rebase your branch from production frequently)
+git push --force -- (Forcing a git push after rebasing a shared branch (use carefully only when needed))
+git reflog -- to see latest commits and merges.
+git reset --hard 42be944 (here 42be944 is id taken from reflog)
+git branch -m <new name> is to rename the branch if already inside the branch.
+git branch --merged master (To check all branches merged to the current master)
+git branch --no-merged (will list all branches which arent merged to master)
