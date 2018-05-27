@@ -9,3 +9,4 @@ while read type
 do
 echo "$type"
 done
+echo "changes in v2b"
