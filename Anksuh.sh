@@ -8,4 +8,5 @@ fi
 while read type 
 do
 echo "$type"
-done  
+done 
+echo " changes in mater branch"
